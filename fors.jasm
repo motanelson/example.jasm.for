@@ -1,0 +1,36 @@
+public super class fors version 69:0
+{
+  public Method "<init>":"()V" 
+    stack 1  locals 1
+  {
+         aload_0;
+         invokespecial     Method java/lang/Object."<init>":"()V";
+         return;
+  }
+
+  public static Method main:"([Ljava/lang/String;)V" 
+    stack 2  locals 2
+  {
+         iconst_0;
+         istore_1;
+         getstatic         Field java/lang/System.out:"Ljava/io/PrintStream;";
+         ldc               String "\u001bc\u001b[47;31m\nyou score?\n";
+         invokevirtual     Method java/io/PrintStream.println:"(Ljava/lang/String;)V";
+         iconst_0;
+         istore_1;
+  L12:   stack_frame_type  append;
+           locals_map      int;
+         iload_1;
+         bipush            10;
+         if_icmpge         L31;
+         getstatic         Field java/lang/System.out:"Ljava/io/PrintStream;";
+         iload_1;
+         invokevirtual     Method java/io/PrintStream.println:"(I)V";
+         iinc              1, 1;
+         goto              L12;
+  L31:   stack_frame_type  same;
+         return;
+  }
+
+  SourceFile               "fors.java";
+} // end Class fors compiled from "fors.java"
